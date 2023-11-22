@@ -1,0 +1,61 @@
+/*********************************************************************************************
+              -	SET THE SCREEN SIZES FOR THE BANNER IF YOU WISH TO MAKE THE BANNER RESOPONSIVE 	-
+**********************************************************************************************/
+
+/*	-	THE BANNER CONTAINER (Padding, Shadow, Border etc. )	-	*/
+
+.bannercontainer {
+    padding:0px;
+    background-color:#fff;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden !important;
+
+}
+
+.banner{
+    position:relative;
+    overflow:visible;
+}
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+	.fullwidthbanner-container{
+		width:760px; height:auto!important;
+	}
+}
+
+/*	THE MEDIA CHOOSER TO SET DIFFERENT SIZES OF THE CONTAINER DEPENDING ON THE SCREEN SIZE    */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .banner, .bannercontainer{
+        width:760px; height:395px;
+    }
+	.fullwidthbanner-container{
+		width:760px; height:auto;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .banner, .bannercontainer{
+        width:480px; /* height:250px; */
+    }
+	.fullwidthbanner-container{
+		height:auto!important;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+    .banner, .bannercontainer{
+        width:320px;/* height:166px; */
+    }
+	.fullwidthbanner-container{
+		height:auto!important;
+	}
+}
+/*full width*/
+.fullwidthbanner-container{
+    width:100% !important;
+    position:relative;
+    padding:0;
+    overflow:hidden;
+}
